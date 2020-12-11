@@ -1,0 +1,319 @@
+<!-- Copyright Epic Games, Inc. All Rights Reserved. -->
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+	<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+	<link type="text/css" rel="stylesheet" href="player.css">
+    <script type="text/javascript" src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    <script type="text/javascript" src="scripts/webRtcPlayer.js"></script>
+    <script type="text/javascript" src="scripts/app.js"></script>
+	<script type="text/javascript" src="scripts/PixelDemo.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="PixelDemo.css">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- For iPhone X the following makes it use the entire screen space for the webpage https://webkit.org/blog/7929/designing-websites-for-iphone-x/ -->
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+</head>
+
+<body onload="load(); onParagonLoad();">
+    <div class="wrapper">
+		<nav id="sidebar" class="active">
+			<div id="sidebarContent">
+			<div class="sidebar-header">
+				<img src="images/logo.svg" width="200px" />
+			</div>
+
+			 <ul id="sidebarlist" class="list-unstyled components">
+
+				<li>
+					<a href="#prod1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Нувіджил</a>
+					<ul class="collapse list-unstyled" id="prod1">
+						<li>
+							<a href="images/file1.pdf" id="preparat1" download="preparat1_file1.pdf" ><img src="images/pdf_icon.svg" width="30px">ЗАВАНТАЖИТИ_1</a>
+						</li>
+						<li>
+							<a href="images/file1.pdf" id="preparat2" download="preparat1_file2.pdf"><img src="images/pdf_icon.svg" width="30px">ЗАВАНТАЖИТИ_2</a>
+						</li>
+						<li>
+							<a href="images/file1.pdf" id="preparat3" download="preparat1_file3.pdf"><img src="images/pdf_icon.svg" width="30px">ЗАВАНТАЖИТИ_3</a>
+						</li>
+						<li>
+							<a href="images/file1.pdf" id="preparat4" download="preparat1_file4.pdf"><img src="images/pdf_icon.svg" width="30px">ЗАВАНТАЖИТИ_4</a>
+						</li>
+						<li>
+							<a href="images/file1.pdf" download="preparat1_file5.pdf"><img src="images/pdf_icon.svg" width="30px">ЗАВАНТАЖИТИ_5</a>
+						</li>
+						<li>
+							<a href="images/file1.pdf" download="preparat1_file6.pdf"><img src="images/pdf_icon.svg" width="30px">ЗАВАНТАЖИТИ_6</a>
+						</li>
+
+					</ul>
+				</li>
+				<li>
+					<a href="#prod2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">CBG</a>
+					<ul class="collapse list-unstyled" id="prod2">
+						<li>
+							<a href="images/file1.pdf" download="preparat2_file1.pdf"><img src="images/pdf_icon.svg" width="30px">ЗАВАНТАЖИТИ_1</a>
+						</li>
+						<li>
+							<a href="images/file1.pdf" download="preparat2_file2.pdf"><img src="images/pdf_icon.svg" width="30px">ЗАВАНТАЖИТИ_2</a>
+						</li>
+						<li>
+							<a href="images/file1.pdf" download="preparat2_file3.pdf"><img src="images/pdf_icon.svg" width="30px">ЗАВАНТАЖИТИ_3</a>
+						</li>
+						<li>
+							<a href="images/file1.pdf" download="preparat2_file4.pdf"><img src="images/pdf_icon.svg" width="30px">ЗАВАНТАЖИТИ_4</a>
+						</li>
+						<li>
+							<a href="images/file1.pdf" download="preparat2_file5.pdf"><img src="images/pdf_icon.svg" width="30px">ЗАВАНТАЖИТИ_5</a>
+						</li>
+						<li>
+							<a href="images/file1.pdf" download="preparat2_file6.pdf"><img src="images/pdf_icon.svg" width="30px">ЗАВАНТАЖИТИ_6</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#prod3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Суммамед</a>
+					<ul class="collapse list-unstyled" id="prod3">
+						<li>
+							<a href="images/file1.pdf" download="preparat3_file1.pdf"><img src="images/pdf_icon.svg" width="30px">ЗАВАНТАЖИТИ_1</a>
+						</li>
+						<li>
+							<a href="images/file1.pdf" download="preparat3_file2.pdf"><img src="images/pdf_icon.svg" width="30px">ЗАВАНТАЖИТИ_2</a>
+						</li>
+						<li>
+							<a href="images/file1.pdf" download="preparat3_file3.pdf"><img src="images/pdf_icon.svg" width="30px">ЗАВАНТАЖИТИ_3</a>
+						</li>
+						<li>
+							<a href="images/file1.pdf" download="preparat3_file4.pdf"><img src="images/pdf_icon.svg" width="30px">ЗАВАНТАЖИТИ_4</a>
+						</li>
+						<li>
+							<a href="images/file1.pdf" download="preparat3_file5.pdf"><img src="images/pdf_icon.svg" width="30px">ЗАВАНТАЖИТИ_5</a>
+						</li>
+						<li>
+							<a href="images/file1.pdf" download="preparat3_file6.pdf"><img src="images/pdf_icon.svg" width="30px">ЗАВАНТАЖИТИ_6</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#prod4" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Олфен</a>
+					<ul class="collapse list-unstyled" id="prod4">
+						<li>
+							<a href="images/file1.pdf" download="preparat4_file1.pdf"><img src="images/pdf_icon.svg" width="30px">ЗАВАНТАЖИТИ_1</a>
+						</li>
+						<li>
+							<a href="images/file1.pdf" download="preparat4_file2.pdf"><img src="images/pdf_icon.svg" width="30px">ЗАВАНТАЖИТИ_2</a>
+						</li>
+						<li>
+							<a href="images/file1.pdf" download="preparat4_file3.pdf"><img src="images/pdf_icon.svg" width="30px">ЗАВАНТАЖИТИ_3</a>
+						</li>
+						<li>
+							<a href="images/file1.pdf" download="preparat4_file4.pdf"><img src="images/pdf_icon.svg" width="30px">ЗАВАНТАЖИТИ_4</a>
+						</li>
+						<li>
+							<a href="images/file1.pdf" download="preparat4_file5.pdf"><img src="images/pdf_icon.svg" width="30px">ЗАВАНТАЖИТИ_5</a>
+						</li>
+						<li>
+							<a href="images/file1.pdf" download="preparat4_file6.pdf"><img src="images/pdf_icon.svg" width="30px">ЗАВАНТАЖИТИ_6</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#prod5" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">OTC</a>
+					<ul class="collapse list-unstyled" id="prod5">
+						<li>
+							<a href="images/file1.pdf" download="preparat5_file1.pdf"><img src="images/pdf_icon.svg" width="30px">ЗАВАНТАЖИТИ_1</a>
+						</li>
+						<li>
+							<a href="images/file1.pdf" download="preparat5_file2.pdf"><img src="images/pdf_icon.svg" width="30px">ЗАВАНТАЖИТИ_2</a>
+						</li>
+						<li>
+							<a href="images/file1.pdf" download="preparat5_file3.pdf"><img src="images/pdf_icon.svg" width="30px">ЗАВАНТАЖИТИ_3</a>
+						</li>
+						<li>
+							<a href="images/file1.pdf" download="preparat5_file4.pdf"><img src="images/pdf_icon.svg" width="30px">ЗАВАНТАЖИТИ_4</a>
+						</li>
+						<li>
+							<a href="images/file1.pdf" download="preparat5_file5.pdf"><img src="images/pdf_icon.svg" width="30px">ЗАВАНТАЖИТИ_5</a>
+						</li>
+						<li>
+							<a href="images/file1.pdf" download="preparat5_file6.pdf"><img src="images/pdf_icon.svg" width="30px">ЗАВАНТАЖИТИ_6</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		</nav>
+
+		<div id="content" class="container">
+            <nav>
+
+				<!-- <div class="apps">
+					<img src="images/google-play-badge.svg" width="200px">
+					<img src="images/win.svg" width="160px">
+				</div> -->
+
+
+				<div class="apps">
+					<div class="row">
+						<div class="col">
+							<img src="images/google-play-badge.svg" width="200px">
+						</div>
+						<div class="col">
+							<a href="https://drive.google.com/u/0/uc?export=download&confirm=I9g1&id=12cIp4IDdtUEDx1hLu20DU9zvTUmwQF2f" target="_blank"><img src="images/win.svg" width="160px"></a>
+						</div>
+
+					</div>
+				</div>
+
+                <div class="btn-group btn-group-lg" role="group">
+                    <!-- <div class="btn-group mr-2 btn-group-lg" role="group" aria-label="Configuration group">
+                        <button type="button" id="sidebarCollapse" class="btn btn-secondary" onclick="toggleSidebar()">
+                            <span class="fas fa-bars"></span>
+                        </button>
+                    </div> -->
+
+                    <!-- <div class="btn-group mr-2 btn-group-lg" role="group" aria-label="Visualization group">
+
+                        <button type="button" class="btn btn-secondary" onclick="zoom()">
+                            <span class="fas fa-search-plus"></span>
+                        </button>
+
+                    </div> -->
+
+                    <div class="btn-group mr-2 btn-group-lg" role="group" aria-label="Visualization group">
+                        <button id="720p" type="button" class="btn btn-secondary" onclick="setRes(1280,720)">
+                            <span>720p</span>
+                        </button>
+
+                        <button id="1080p" type="button" class="btn btn-secondary" onclick="setRes(1920, 1080)">
+                            <span>1080p</span>
+                        </button>
+
+                    </div>
+                </div>
+                <div class="btn-group btn-group-lg btn-group-toggle" data-toggle="buttons" role="group">
+                    <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#settings">
+                        <span class="fas fa-sliders-h"></span>
+                    </button>
+                </div>
+                <div class="btn-group btn-group-lg btn-group-toggle" data-toggle="buttons" role="group">
+                    <div id="settings" class="btn-group mr-2 btn-group-lg collapse" role="group" aria-label="Configuration group">
+                        <div class="btn-group btn-group-lg dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="bandwidthCapDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Пропускна здатність&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="bandwidthCapDropdown">
+                                <a class="dropdown-item" href="#" onclick="setBandwidthCap(0.5);">0.5 Mbps</a>
+                                <a class="dropdown-item" href="#" onclick="setBandwidthCap(1);">1 Mbps</a>
+                                <a class="dropdown-item" href="#" onclick="setBandwidthCap(2);">2 Mbps</a>
+                                <a class="dropdown-item" href="#" onclick="setBandwidthCap(3);">3 Mbps</a>
+                                <a class="dropdown-item" href="#" onclick="setBandwidthCap(4);">4 Mbps</a>
+                                <a class="dropdown-item" href="#" onclick="setBandwidthCap(5);">5 Mbps</a>
+                                <a class="dropdown-item" href="#" onclick="setBandwidthCap(8);">8 Mbps</a>
+                                <a class="dropdown-item" href="#" onclick="setBandwidthCap(10);">10 Mbps</a>
+                                <a class="dropdown-item" href="#" onclick="setBandwidthCap(15);">15 Mbps</a>
+                                <a class="dropdown-item" href="#" onclick="setBandwidthCap(20);">20 Mbps</a>
+                                <a class="dropdown-item" href="#" onclick="setBandwidthCap(30);">30 Mbps</a>
+                                <a class="dropdown-item" href="#" onclick="setBandwidthCap(50);">50 Mbps</a>
+                                <a class="dropdown-item" href="#" onclick="setBandwidthCap(60);">60 Mbps</a>
+                            </div>
+                        </div>
+                        <div class="btn-group btn-group-lg dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="framerateCapDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Частота кадрів&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="framerateCapDropdown">
+                                <a class="dropdown-item" href="#" onclick="setFramerateCap(5);">5 fps</a>
+                                <a class="dropdown-item" href="#" onclick="setFramerateCap(10);">10 fps</a>
+                                <a class="dropdown-item" href="#" onclick="setFramerateCap(15);">15 fps</a>
+                                <a class="dropdown-item" href="#" onclick="setFramerateCap(20);">20 fps</a>
+                                <a class="dropdown-item" href="#" onclick="setFramerateCap(25);">25 fps</a>
+                                <a class="dropdown-item" href="#" onclick="setFramerateCap(30);">30 fps</a>
+                                <a class="dropdown-item" href="#" onclick="setFramerateCap(40);">40 fps</a>
+                                <a class="dropdown-item" href="#" onclick="setFramerateCap(50);">50 fps</a>
+                                <a class="dropdown-item" href="#" onclick="setFramerateCap(60);">60 fps</a>
+                                <a class="dropdown-item" href="#" onclick="setFramerateCap(0);">Unlimited</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="row">
+                <div class="col">
+					<!-- <div id="playerUI"> -->
+						<div id="player">
+
+							<!-- <img src="images/pdf_sidebar.svg" alt="Open Sidebar" id="open_side" width="50px" onclick="toggleSidebarPDF()"> -->
+							<div id="configuration">
+								<div id="ck-fullscreen" data-toggle="tooltip" data-placement="bottom" data-trigger="manual" data-offset="-80" title="Натисніть для входу в повноєкранний режим">
+									<img src="images/MaximiseToFullscreen.svg" alt="Maximise to Fullscreen" id="fullscreen-img" class="fullscreen-btn">
+								</div>
+							</div>
+						</div>
+						<!-- <div id="overlay" class="overlay">
+							<div id="overlayButton" onclick="onExpandOverlay_Click()">+</div>
+							<div id="overlaySettings" style="display: block">
+								<div id="KickOthers">
+									<div class="settings-text">Kick all other players</div>
+									<label class="btn-overlay">
+										<input type="button" id="kick-other-players-button" class="overlay-button btn-flat" value="Kick">
+									</label>
+								</div>
+				                <div id="FillWindow">
+				                    <div class="settings-text">Enlarge Display to Fill Window</div>
+				                    <label class="tgl-switch">
+				                        <input type="checkbox" id="enlarge-display-to-fill-window-tgl" class="tgl tgl-flat" checked>
+				                        <div class="tgl-slider"></div>
+				                    </label>
+				                </div>
+				                <div id="QualityControlOwnership">
+				                    <div class="settings-text">Quality control ownership</div>
+				                    <label class="tgl-switch">
+				                        <input type="checkbox" id="quality-control-ownership-tgl" class="tgl tgl-flat">
+				                        <div class="tgl-slider"></div>
+				                    </label>
+				                </div>
+								<div id="statsSetting">
+									<div class="settings-text">Show Stats</div>
+									<label class="tgl-switch">
+										<input type="checkbox" id="show-stats-tgl" class="tgl tgl-flat">
+										<div class="tgl-slider"></div>
+									</label>
+									<div id="statsContainer">
+										<div id="stats"></div>
+									</div>
+								</div>
+							</div>
+						</div> -->
+					<!-- </div> -->
+                </div>
+            </div>
+
+
+        </div>
+
+
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+
+            $('[data-toggle="tooltip"]').tooltip('show');
+
+	</script>
+
+</body>
+</html>
